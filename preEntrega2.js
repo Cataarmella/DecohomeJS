@@ -21,6 +21,7 @@ class Productos {
 const carrito = {
             productos : [],
             precioTotal : 0,
+            cantidad : 0,
 }
 
 const producto1 = new Productos (15, "producto 1", "skfsdlfjsds", 2000);
@@ -65,8 +66,10 @@ function mostrarTotal () {
 for (const producto of carrito.productos){
 
     carrito.precioTotal += producto.precio 
+    
  }
 
- console.log("el total de la compra es "+ carrito.precioTotal);
+ console.log("usted tiene " + carrito.productos.length + " productos en el carrito " + "el total de la compra es "+ carrito.precioTotal);
+
 }
  
