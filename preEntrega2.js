@@ -29,6 +29,6 @@ if (edad >= 18) {
         producto = prompt("ingrese el producto que desa comprar : producto1, producto2, producto3 (s para salir)")
     }
 }else{
-    alert("Eres menor no puedes continuar")
+    alert("Eres menor no puedes continuarr")
 }
 
