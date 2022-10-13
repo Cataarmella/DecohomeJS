@@ -57,11 +57,12 @@ if (edad >= 18) {
         producto = prompt("ingrese el producto que desa comprar : producto1, producto2, producto3 (s para salir)")
     }
 
-    mostrarTotal();
+    //mostrarTotal();
 }else{
     alert("Eres menor no puedes continuarr")
 }
 
+/*
 function mostrarTotal () {
 for (const producto of carrito.productos){
 
@@ -72,4 +73,7 @@ for (const producto of carrito.productos){
  console.log("usted tiene " + carrito.productos.length + " productos en el carrito " + "el total de la compra es "+ carrito.precioTotal);
 
 }
- 
+ */
+
+const valorTotalCarrito = carrito.productos.reduce((sumador,productos) => sumador+productos.precio,0);
+console.log("usted tiene " + carrito.productos.length + " productos en el carrito " + "el total de la compra es " + valorTotalCarrito);
