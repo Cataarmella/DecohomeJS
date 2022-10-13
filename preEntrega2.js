@@ -62,6 +62,8 @@ if (edad >= 18) {
     alert("Eres menor no puedes continuarr")
 }
 
+
+//otra opcion que dejo por si me interesa para el proyecto final 
 /*
 function mostrarTotal () {
 for (const producto of carrito.productos){
